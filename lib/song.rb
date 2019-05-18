@@ -32,7 +32,7 @@ class Song
     genre_count = Hash.new(0)
 
     # Source: https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-each_with_object
-    @@genres.each_with_object({}){
+    @@genres.each_with_object({}) {
       |genre| genre_count[genre] += 1
     }
 
@@ -41,6 +41,13 @@ class Song
   end
 
   def self.artist_count
+
+    artist_count = Hash.new(0)
+
+
+    @@artists.each_with_object({}) {
+      |artist| artist_count[artist] += 1
+    }
 
   end
 
