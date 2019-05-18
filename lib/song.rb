@@ -31,17 +31,7 @@ class Song
   def self.genre_count
     genre_count = Hash.new(0)
 
-=begin
-    @@genres.each do |genre|
-      if genre_count[genre]
-        genre_count[genre] += 1
-      else
-        genre_count[genre] = 1
-      end
-    end
-    genre_count
-=end
-
+    # Source: https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-each_with_object
     @@genres.each_with_object({}){
       |genre| genre_count[genre] += 1
     }
