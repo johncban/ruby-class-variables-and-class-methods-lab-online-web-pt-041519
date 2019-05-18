@@ -42,7 +42,7 @@ class Song
     genre_count
 =end
 
-  @@genres.each_with_object do (genre_count){
+  @@genres.each_with_object (genre_count){
     |genre| genre_count[genre] += 1
   }
   genre_count
