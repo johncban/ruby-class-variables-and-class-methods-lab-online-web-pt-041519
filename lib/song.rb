@@ -36,7 +36,6 @@ class Song
     @@genres.each_with_object({}) {
       |genre| genre_count[genre] += 1
     }
-
     genre_count
 
   end
