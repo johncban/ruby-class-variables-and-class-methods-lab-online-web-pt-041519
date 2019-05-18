@@ -44,7 +44,7 @@ class Song
 
     artist_count = Hash.new(0)
 
-
+    # Source: https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-each_with_object
     @@artists.each_with_object({}) {
       |artist| artist_count[artist] += 1
     }
