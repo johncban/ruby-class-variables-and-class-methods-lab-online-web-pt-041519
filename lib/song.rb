@@ -29,6 +29,7 @@ class Song
   end
 
   def self.genre_count
+    # Source: https://stackoverflow.com/questions/35177845/whats-the-difference-between-hash-new0-and/35177904
     genre_count = Hash.new(0)
 
     # Source: https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-each_with_object
@@ -41,7 +42,7 @@ class Song
   end
 
   def self.artist_count
-
+    # Source: https://stackoverflow.com/questions/35177845/whats-the-difference-between-hash-new0-and/35177904
     artist_count = Hash.new(0)
 
     # Source: https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-each_with_object
